@@ -14,6 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false, limit: "50mb" }));
 
 app.use("/api/goals", require("./routes/GoalRoutes"));
+app.use("/api/users", require("./routes/UserRoutes"));
 
 app.use(errorHandler);
 
